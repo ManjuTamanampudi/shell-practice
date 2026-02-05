@@ -1,5 +1,5 @@
 #!/bin/bash
-DATE1=$(date +%s)
+#DATE1=$(date +%s)
 
 #echo "Hey manju today date is  :" $DATE1
 #echo "enter day:" 
