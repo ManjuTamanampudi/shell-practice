@@ -23,7 +23,7 @@ dnf install nginx -y &>> $logs_file
 validate $? "nginx installed"
 echo "nginx installed ..."
 
-dnf install mysql -y &>> $logs_file
+dnf install mysq -y &>> $logs_file
 validate $? "mysql installed"
 echo "mysql installed ..."
 
