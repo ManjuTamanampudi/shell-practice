@@ -9,6 +9,7 @@ elif [ $number -eq 20 ]; then
 echo "hello"
 else
 echo "bye"
+exit 1
 fi
 sleepp 10
 echo $?
