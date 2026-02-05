@@ -5,7 +5,7 @@ number=$1
 
 if [ $number -gt 20 ]; then
 echo "hi"
-elif [ $number -et 20 ]; then
+elif [ $number -eq 20 ]; then
 echo "hello"
 else
 echo "bye"
