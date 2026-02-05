@@ -6,7 +6,7 @@ exit 1
 fi
 
 validate(){
-    if [ $1 -gt 0 ]; then
+    if [ $1 -ne 0 ]; then
     echo "Failed $2 "
     exit 1
     else
@@ -14,14 +14,14 @@ validate(){
     fi
 
 }
-install nginx -y
+dnf install nginx -y
 $validate $? "nginx installed"
 echo "nginx installed ..."
 
-install mysql -y
+dnf install mysql -y
 $validate $? "mysql installed"
 echo "mysql installed ..."
 
-install node -y
+dnf install nodee -y
 $validate $? "node installed"
 echo "node installed ..."
