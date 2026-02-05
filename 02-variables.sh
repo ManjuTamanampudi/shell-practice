@@ -18,7 +18,7 @@ echo "pwd : " $PWD
 echo "user : " $USER
 echo "home : " $Home
 echo "pid : " $$
-echo "background process : " sleep 10 &
+sleep 10 &
 echo "backgroundpid : " $!
 
 
