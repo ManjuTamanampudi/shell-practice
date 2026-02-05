@@ -19,6 +19,6 @@ echo "user : " $USER
 echo "home : " $Home
 echo "pid : " $$
 sleep 10 &
-echo "backgroundpid : " $!
+echo "backgroundpid : $!"
 
 
