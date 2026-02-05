@@ -15,13 +15,13 @@ validate(){
 
 }
 dnf install nginx -y
-$validate $? "nginx installed"
+validate $? "nginx installed"
 echo "nginx installed ..."
 
 dnf install mysql -y
-$validate $? "mysql installed"
+validate $? "mysql installed"
 echo "mysql installed ..."
 
 dnf install nodee -y
-$validate $? "node installed"
+validate $? "node installed"
 echo "node installed ..."
