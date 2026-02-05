@@ -11,7 +11,7 @@ else
 echo "bye"
 exit 1
 fi
-sleepp 10
+sleep 10
 echo $?
 
 echo "will print 0 if its sudo user  greterthan 0 if not root user: " $(id -u)
