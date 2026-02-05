@@ -10,5 +10,5 @@ echo "hello"
 else
 echo "bye"
 fi
-
+sleepp 10
 echo $?
