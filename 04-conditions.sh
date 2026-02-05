@@ -10,3 +10,5 @@ echo "hello"
 else
 echo "bye"
 fi
+
+echo $?
