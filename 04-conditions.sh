@@ -13,4 +13,4 @@ fi
 sleepp 10
 echo $?
 
-echo "print 0 if its sudo user : " $(id -u)
+echo "will print 0 if its sudo user  greterthan 0 if not root user: " $(id -u)
