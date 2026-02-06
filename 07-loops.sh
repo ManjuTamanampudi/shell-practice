@@ -3,7 +3,8 @@
 logs_folder=/var/logs/shell-practice
 logs_file=/var/logs/shell-practice/$0.log
 
-
+y=\e[32m
+n=\e[0m
 if [ $(id -u) -ne 0 ]; then
 echo "please login to sudo user"
 exit 1
@@ -25,7 +26,7 @@ do
     if [ $? -ne 0 ]; then
        dnf install $package -y &>> $logs_file
        validate $? "$package installed"
-       echo -e "\e[32m $package \e[0m not installed ... installing now"
+       echo -e "$y $package $n not installed ... installing now"
     else
       echo "$package already installed"
     fi
