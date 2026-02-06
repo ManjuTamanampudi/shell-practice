@@ -12,10 +12,10 @@ sudo mkdir -p $logs_folder
 
 validate(){
     if [ $1 -ne 0 ]; then
-    echo "Failed $2 "
+    echo "Failed $2 " &>> | -a $logs_file
     exit 1
     else
-    echo "Success $2"
+    echo "Success $2" &>> | -a $logs_file
     fi
 
 }
