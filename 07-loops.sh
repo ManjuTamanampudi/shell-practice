@@ -3,8 +3,8 @@
 logs_folder=/var/logs/shell-practice
 logs_file=/var/logs/shell-practice/$0.log
 
-y=\e[32m
-n=\e[0m
+y="\e[32m"
+n="\e[0m"
 if [ $(id -u) -ne 0 ]; then
 echo "please login to sudo user"
 exit 1
