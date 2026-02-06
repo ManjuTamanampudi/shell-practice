@@ -28,6 +28,6 @@ do
        validate $? "$package installed"
        echo -e "$y $package $n not installed ... installing now"
     else
-      echo "\e[32m $package already installed"
+      echo "$y $package already installed"
     fi
 done
