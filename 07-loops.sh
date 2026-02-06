@@ -1,5 +1,6 @@
 #!/bin/bash
-
+set -e
+trap echo ' "there is error in $LINENO, Command : $BASH_COMMAND"' ERR
 logs_folder=/var/logs/shell-practice
 logs_file=/var/logs/shell-practice/$0.log
 
