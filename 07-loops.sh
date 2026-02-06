@@ -5,6 +5,7 @@ logs_file=/var/logs/shell-practice/$0.log
 
 y="\e[32m"
 n="\e[0m"
+
 if [ $(id -u) -ne 0 ]; then
 echo "please login to sudo user"
 exit 1
@@ -28,6 +29,6 @@ do
        validate $? "$package installed"
        echo -e "$y $package $n not installed ... installing now"
     else
-      echo "$y $package already installed"
+      echo "$y $package already $y installed"
     fi
 done
