@@ -29,6 +29,6 @@ do
        validate $? "$package installed"
        echo -e "$y $package $n not installed ... installing now"
     else
-      echo "$y $package already $y installed"
+      echo -e "$y $package already $y installed"
     fi
 done
