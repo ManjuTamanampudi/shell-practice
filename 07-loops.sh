@@ -25,7 +25,7 @@ do
     if [ $? -ne 0 ]; then
        dnf install $package -y &>> $logs_file
        validate $? "$package installed"
-       echo -e " "\e[32m" $package "\e[0m" not installed ... installing now"
+       echo -e "\e[32m $package \e[0m not installed ... installing now"
     else
       echo "$package already installed"
     fi
