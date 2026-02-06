@@ -19,14 +19,9 @@ validate(){
     fi
 
 }
-dnf install nginx -y &>> $logs_file
-validate $? "nginx installed"
-echo "nginx installed ..."
-
-dnf install mysql -y &>> $logs_file
-validate $? "mysql installed"
-echo "mysql installed ..."
-
-dnf install nodejs -y &>> $logs_file
-validate $? "node installed"
-echo "node installed ..."
+for package in $@
+do
+dnf install $package -y &>> $logs_file
+validate $? "$package installed"
+echo "$package installed ..."
+done
